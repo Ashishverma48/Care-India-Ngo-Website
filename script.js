@@ -9,3 +9,14 @@ window.addEventListener('scroll', ()=>{
         nav.style.scrollBehavior = 'smooth'
     }
 })
+
+$(document).ready(function(){
+    
+    $('.owl-carousel').owlCarousel({
+        margin:10,
+        loop:true,
+        autoWidth:true,
+        items:1
+    })
+  });
+  

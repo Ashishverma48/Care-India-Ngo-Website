@@ -9,7 +9,7 @@
 }
 body{
     width: 100%;
-    position: relative;
+    
     
 }
 
@@ -141,14 +141,14 @@ input::placeholder{
     z-index: -1;
 }
 
-
-
   /* DropDown Start */
 .dropdown{
     position:relative;
      padding: .1rem .7rem;
+     animation: all .2s ease-in;
     
 }
+
 .dropdown li{
     /* background-color: white; */
     color: var(--secondaryColor);
@@ -158,17 +158,28 @@ input::placeholder{
     background-color: white;
     border-bottom: 1px solid black;
     padding: .2rem 1rem;
+    /* border: 2px solid red; */
+    animation: dropItem .3s ease-out;
 }
+@keyframes dropItem {
+    0%{
+        margin-bottom: .4rem;
+    }
+    100%{
+        margin-bottom: 0;
+    }
+}
+
 .dropdown a{
     
-    /* border-bottom: .1px solid; */
-
     color: black;
     text-decoration: none;
+
 }
 
 .dropdown:hover{
     background-color: #fba704;
+    transition: .2s ease-in;
 }
 .dropdownContent{
     display: none;
@@ -176,7 +187,17 @@ input::placeholder{
     top: 10%;
     padding-top: 2.5rem;
     left: -2rem;
-    transition: .5s ease;
+    /* transition: .5s ease; */
+    animation: dropdown .2s ease-in;
+    
+}
+@keyframes dropdown{
+    0%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 .dropdown:hover .dropdownContent{
     display: block;
@@ -194,7 +215,7 @@ input::placeholder{
 /* NavBar End */
 
 
-/* Carousel  */
+/* Carousel  First */
 
 .carouselItem{
     position: relative;
@@ -207,7 +228,7 @@ input::placeholder{
     content: '';
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.469);
+    background-color: rgba(0, 0, 0, 0.346);
     
 }
 .carouselContent{
@@ -225,7 +246,9 @@ input::placeholder{
     color: var(--primartColor);
     font-size: 2.9rem;
     font-weight: 600;
+    
 }
+
 .carouselContent button{
     padding: .5rem 2rem ;
     font-weight:600;
@@ -234,4 +257,11 @@ input::placeholder{
     border: 0;
     width: fit-content;
     
+}
+
+/* Carousel End First */
+.owlCarouselItem{
+    width: 100vw;
+    border: 2px solid red;
+    height: 75vh;
 }
