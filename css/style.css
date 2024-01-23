@@ -12,6 +12,17 @@ body{
     
     
 }
+h2{
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h6{
+    font-size: 2.2rem;
+}
 
 /* NavBar Start */
 
@@ -260,8 +271,153 @@ input::placeholder{
 }
 
 /* Carousel End First */
+
+/* Owl Carousel */
 .owlCarouselItem{
     width: 100vw;
+    /* border: 2px solid pink; */
+    height: 80vh;
+    display: flex;
+    padding:2rem  7rem ;
+    gap: 10px;
+    /* border: 2px solid red; */
+    
+}
+.owlCarouselItem .owlCarouselImg{
+    /* border: 2px solid green; */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgHoverCircle{
+    padding: 1.2rem;
+    border-radius: 50%;
+    background-image: conic-gradient( transparent 0deg,transparent 180deg,#e4701d 180deg , #e4701d 360deg );
+    
+}
+.imgHoverCircle:hover{
+    transition: .2s ease-in-out;
+    background-color: #e4701d;
+}
+.owlCarouselImg img{
+    /* border: 1.2rem solid #e4701d; */
+    border-radius: 50%;
+}
+.owlCarouselItem .owlCarouselContent{
+    width: 70%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* align-items: center; */
+    height: 100%;
+    /* border: 2px solid black; */
+
+}
+.owlCarouselContent h2{
+    font-weight: 700;
+}
+.owlCarouselContent p{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.owlCarouselContent button{
+    width: fit-content;
+    padding: .5rem 1.6rem ;
+    border: 0;
+    background-color: #fba704;   
+}
+.owlCarouselContent button:hover{
+    background-color: #e4701d;
+    transition: .1s ease-in;
+}
+
+
+
+/* Focus Conationer Start */
+.focus-container{
+    display: flex;width: 100%;
+    padding: 2rem 6rem;
+    justify-content: space-between;
     border: 2px solid red;
-    height: 75vh;
+}
+
+.focus-area{
+    width: 23%;
+    border: 7px solid #ccc;
+    height: 300px;
+    margin-bottom: 2rem;
+    background-color: #b2b2b2;
+    /* background-color: red; */
+    /* border-color: red; */
+    
+    position: relative;
+    
+}
+.focus-area:nth-child(even){
+    margin-top: 3rem;
+}
+
+.focus-area .bg{
+    width: 100%;
+     height:95%;
+     background-position: center;
+     background-size: cover;
+     background-color: rgba(0, 0, 0, 0.497)
+     
+   ;
+   background-blend-mode: multiply;
+}
+.focus-area .bg-1{
+    background-image: url("../img/health.jpg");
+}
+.focus-area .bg-2{
+    background-image: url("../img/education.jpg");
+}
+.focus-area .bg-3{
+    background-image: url("../img/livelihood.jpg");
+}
+.focus-area .bg-4{
+    background-image: url("../img/disaster-relif.jpg");
+}
+.focus-area .title{
+    position: absolute;
+    top: 11px;
+    color: var(--primartColor);
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.focus-content{
+    position: absolute;
+    bottom: -8rem;
+    border: 2px;
+    text-align: center;
+    display: none;
+    left: 0;
+    transition: .3s ease-in;
+}
+.focus-container h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primartColor);
+    border: 2px solid;
+}
+.focus-container p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.18rem;
+    margin-top: 10px;
+}
+
+.focus-area:hover .title{
+    display: none;
+    transition: 2s ease-in-out;
+}
+.focus-area:hover .focus-content{
+    display: block;
+   
+}
+.focus-area:hover .bg{
+    background-color: transparent;
 }
