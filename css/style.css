@@ -505,3 +505,69 @@ justify-content: center;
     margin-bottom: 0;
     text-align: center;
 }
+
+
+/* Year Section  */
+
+.yearSection {
+margin-top: 2rem;
+}
+.yearSection>h3{
+    /* font-size: 2.5rem; */
+    font-weight: 700;
+    text-align: center;
+    padding-inline:5rem ;
+}
+
+.year{
+    
+    /* height: 50vh; */
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+.year>div{
+   
+    height: 100%;
+    /* width: 30%; */
+    padding: 1vw;
+
+}
+.year>div>div{
+    display: flex;  
+    align-items: center;
+    gap: 1vw;
+    justify-content: center;
+}
+.year h1{
+    font-size: 7rem;
+}
+.year h5{
+    font-size: 1.7rem;
+    color: #12374f;
+}
+.year p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #e4701d;
+}
+.arrow{
+height: 17vh;
+}
+
+/* Help Section  */
+.helpSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6vh;
+}
+.helpSection>:nth-child(1){
+    /* border: 2px solid red; */
+    width: 50%;
+    background-color: #f4b124 ;
+    text-align: center;
+    color: var(--primartColor);
+    padding: .2rem;
+}
