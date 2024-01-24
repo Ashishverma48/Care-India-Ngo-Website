@@ -9,6 +9,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     margin: 10,
@@ -21,3 +23,10 @@ $(document).ready(function () {
     autoplayHoverPause: true,
   });
 });
+
+$('.counter').counterUp(
+  {
+    
+    
+  }
+);
