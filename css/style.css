@@ -789,17 +789,17 @@ height: 17vh;
 .connectMain{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     
 
 }
 .connectMain>div{
-    width: calc(50% );
-    padding-inline: 3rem;
+    width: 45%;
+    /* padding-inline: 3rem; */
     
 }
 .connectSection>div{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: 85%;
     display: flex;
 
@@ -809,6 +809,7 @@ height: 17vh;
     display: flex;
     flex-direction: column;
     gap:8px;
+    padding-inline: 3rem;
 }
 
 
@@ -839,5 +840,56 @@ height: 17vh;
     color: black;
 }
 .connect-details{
-    border: 2px solid green;
+   
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socialIcon i{
+    
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 17px;
+    background-color: white;
+    color: #e4701d;
+    margin-left: 1rem;
+}
+.connect-details h5{
+    color: rgba(0, 0, 0, 0.801);
+}
+.connect-details .phoneNumber{
+    
+    width: fit-content;
+    padding: 7px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #f4b124;
+} 
+
+.connect-details p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--primartColor);
+}
+.connect-details .donateBtn{
+   
+    width: fit-content;
+    padding: 5px 25px;
+    font-weight: 700;
+    font-size: 24px;
+    background-color: #f4b124;
+}
+.donateBtn i{
+    color: var(--primartColor);
+}
+.connect-details  h4:nth-of-type(2){
+    color: white;
+   
+}
+.connect-details h4:nth-of-type(1){
+    font-size: 1.6rem;
+    margin-top: 7px;
+    color: rgba(42, 41, 41, 0.805);
 }
