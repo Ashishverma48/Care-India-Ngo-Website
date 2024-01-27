@@ -29,6 +29,7 @@ h6{
 .navbar{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     height: 111px;
     justify-content: space-around;
     padding:0 5rem 5rem 5rem;
@@ -912,7 +913,7 @@ footer{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    background-color: #2e2e2e;
+    background-color: #494948;
     gap: 10px;
 }
 .footerContentMain{
@@ -936,11 +937,15 @@ footer{
 }
 .footerLogo>div{
     /* border: 2px solid red; */
-    padding: 5px 32px;
+    padding: 4px 30px;
     width: fit-content;
     font-size: 29px;
     font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
     background-color: #f4b124;
+}
+.footerLogo>div i{
+    color: white;
 }
 .footerLogo>p{
     font-size: 14px;
@@ -984,4 +989,86 @@ transition: .3s ease;
     margin: 0;
     text-align: center;
     color: var(--primartColor);
+}
+
+
+.mobileMenuContainer {
+    border: 2px solid red;
+    width: 100%;
+    max-width: 100%;
+
+}
+.mobileMenuContainer ul{
+    list-style: none;
+}
+.mobileLogo img{
+    width: 300px;
+}
+.mainMenu{ 
+    width: 100%;
+    border: 2px solid green;
+    padding: 10px;
+}.menuItem>p{
+    position: relative;
+    padding: 5px 0 5px .5rem;
+    /* display: block; */
+    border: 2px solid red;
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+}
+.menuBtn{
+    position: absolute;
+    right: 3.4rem;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%) ;
+    cursor: pointer;
+    
+    font-size: 1.1rem;
+  
+}
+.menuBtn.active{
+    transform: translateY(-50%) rotate(180deg);
+    transition: .3s ease-in-out;
+}
+.subMenu{
+    /* display: block; */
+    overflow: hidden;
+    height: 0;
+    
+
+}
+.subMenu li{
+    padding: 5px;
+}
+.subMenu a{
+    padding-block: 4px;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+.subMenu.active{
+    /* display: none; */
+    height: fit-content;
+   
+    /* background-color: #004e7e; */
+}
+.socialMenuIcons{
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+}
+.socialMenuIcons i{
+        height: 45px;
+        width: 45px;
+        border: 1px solid red;
+        border-radius: 50%;
+        display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 1.3rem;
 }

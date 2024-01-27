@@ -28,3 +28,18 @@ $('.counter').counterUp(
   {  
   }
 );
+
+
+const menuItem = document.querySelectorAll('.menuItem');
+
+// console.log(menuItem);
+menuItem.forEach(item=>{
+  const menuBtn = item.querySelector('.menuBtn');
+  const subMenu = item.querySelector('.subMenu');
+  
+    menuBtn.addEventListener('click',()=>{
+      subMenu.classList.toggle('active')
+      menuBtn.classList.toggle('active')
+    })
+
+})

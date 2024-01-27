@@ -1,0 +1,43 @@
+@media screen and (max-width : 768px) {
+    .navbar{
+        flex-direction: column-reverse;
+        align-items: start;
+        height: fit-content;
+        padding: 5px 15px;
+        height: fit-content;
+    }
+   
+    .navDown{
+       display: none; 
+    }
+    .logo{
+        /* margin-top: 2rem; */
+        /* width: 50%; */
+        border: 2px solid green;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .logo i{
+        font-size: 2rem;
+        padding-right: 2rem;
+    }
+    .logoImg{
+        width: 280px;
+    }
+    .navItem{
+        width: 100%;
+        padding: 0;
+        border: 3px solid red;
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+
+    .navDonate{
+        display: none;
+    }
+    .fa-magnifying-glass{
+        color: black;
+    }
+}
