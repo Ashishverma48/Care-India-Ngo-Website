@@ -1,43 +1,152 @@
-@media screen and (max-width : 768px) {
-    .navbar{
-        flex-direction: column-reverse;
-        align-items: start;
-        height: fit-content;
-        padding: 5px 15px;
-        height: fit-content;
-    }
-   
-    .navDown{
-       display: none; 
-    }
-    .logo{
-        /* margin-top: 2rem; */
-        /* width: 50%; */
-        border: 2px solid green;
-        width: 100%;
-        justify-content: space-between;
-    }
-    .logo i{
-        font-size: 2rem;
-        padding-right: 2rem;
-    }
-    .logoImg{
-        width: 280px;
-    }
-    .navItem{
-        width: 100%;
-        padding: 0;
-        border: 3px solid red;
-    }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  h6 {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    flex-direction: column-reverse;
+    align-items: start;
+    height: fit-content;
+    padding: 5px 15px;
+    height: fit-content;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .navDown {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .logo i {
+    font-size: 2rem;
+    padding-right: 2rem;
+  }
+  .logoImg {
+    width: 280px;
+  }
+  .menuBarIcon {
+    display: block;
+  }
+  .navItem {
+    width: 100%;
+    padding: 0;
+    /* border: 3px solid red; */
+  }
+  .carouselSection {
+    width: 100%;
+    height: 100vh;
+  }
+  .carouselItem {
+    height: 100%;
+    width: 100%;
+  }
+  .carouselItem img {
+    width: 120% !important;
+  }
+  .indicator {
+    display: none;
+  }
+  .carouselContent h2 {
+    font-size: 2rem;
+  }
+  /* Owl Carousel  */
+  .owlCarouselItem {
+    padding: 3rem 10px;
+  }
+  .carouselContent h2 {
+    font-weight: 500;
+  }
+  /* Focus */
+  .focus-container {
+    padding: 30px;
+  }
+  .focus-area {
+    width: calc(50% - 2rem);
+  }
+  .focus-content {
+    display: none;
+  }
+  /* Reach */
+  .reachMianContainer {
+    flex-direction: column;
+  }
+  .reachMianContainer > div {
+    width: 100%;
+  }
+  .reachContent img {
+    display: none;
+  }
+  .reachContent {
+    width: 100%;
+    justify-content: center;
+  }
+  .reachRightContent {
+    gap: 10px;
+  }
+  .reachRightContent p {
+    font-size: 1.3rem;
+  }
+  /* Year */
+  .year h1 {
+    font-size: 4rem;
+  }
+  .yearSection h3 {
+    padding-inline: 1rem;
+  }
+  .year h5 {
+    font-size: 1.2rem;
+  }
+  /* Graph */
+  .graph{
+    padding: 10px;
+  }
+  .thumb-icon {
+    width: 101px !important;
+  }
+  .graphImg h5 {
+    font-size: 1.3rem !important;
+  }
+
+  .graph-border {
+    display: none;
+  }
+  .progress-img {
+    float: left;
+    margin-top: 0;
+    align-self: self-start;
+  }
+  .progress-img::before {
+    height: 0;
+    width: 0;
+  }
+  .helpSection h4{
+    font-size: 1.4rem;
+  }
 }
 
-
-@media screen and (max-width : 768px) {
-
-    .navDonate{
-        display: none;
-    }
-    .fa-magnifying-glass{
-        color: black;
-    }
+@media screen and (max-width: 768px) {
+  .navDonate {
+    display: none;
+  }
+  .fa-magnifying-glass {
+    color: black;
+  }
+  /* mobile nav */
+  .mainMenu {
+    /* padding: 10px; */
+  }
+  .menuItem > p {
+    padding: 0;
+  }
 }

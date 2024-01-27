@@ -36,10 +36,26 @@ const menuItem = document.querySelectorAll('.menuItem');
 menuItem.forEach(item=>{
   const menuBtn = item.querySelector('.menuBtn');
   const subMenu = item.querySelector('.subMenu');
+
+
   
     menuBtn.addEventListener('click',()=>{
       subMenu.classList.toggle('active')
-      menuBtn.classList.toggle('active')
+      menuBtn.classList.toggle('active') 
     })
 
+})
+
+// Menu Bar Click Button
+
+const menuBar = document.querySelector('#menuBarIcon')
+const removeMenuBar = document.querySelector('#removeMenuBar')
+const mobileMenuContainer = document.querySelector('#mobileMenuContainer')
+
+menuBar.addEventListener('click',()=>{
+  mobileMenuContainer.style.transform  = 'translateX(0)';
+})
+
+removeMenuBar.addEventListener('click',()=>{
+  mobileMenuContainer.style.transform  = 'translateX(-100%)';  
 })

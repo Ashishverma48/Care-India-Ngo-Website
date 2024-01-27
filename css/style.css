@@ -58,7 +58,9 @@ h6{
 .logoImg{
     width:60%;
 }
-
+.menuBarIcon{
+    display: none;
+}
 #navbar.navSticky .logoImg{
     filter: brightness(0) invert(1)
 }
@@ -342,7 +344,8 @@ input::placeholder{
     display: flex;
     width: 100%;
     padding: 3rem 6rem;
-    height: 100vh;
+    /* height: 100vh; */
+    flex-wrap: wrap;
     justify-content: space-between;
     /* border: 2px solid red; */
 }
@@ -490,12 +493,17 @@ justify-content: center;
 .reachRightContent>:nth-child(2){
     display: flex;
     gap: 3rem;
-    /* border: 3px solid red; */
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    
 }
 .reachRightContent>:nth-child(2)>div{
     padding: .9rem 2rem;
     border-right: 1.6px dotted #fba704;
     text-align: center  ;
+    /* border: 2px solid red; */
+   
 }
 .reachRightContent p{
     font-size: 2rem;
@@ -992,33 +1000,68 @@ transition: .3s ease;
 }
 
 
-.mobileMenuContainer {
-    border: 2px solid red;
-    width: 100%;
-    max-width: 100%;
 
+/* Mobile Menu Container */
+.mobileMenuContainer {
+    /* border: 2px solid red; */
+    width: 100%;
+    background-color: #004e7e;
+    max-width: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 111;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: .4s ease;
+    /* height: 100%; */
+
+}
+
+.mobileMenuWrapper{
+    /* overflow: scroll; */
+    height: 100%;
 }
 .mobileMenuContainer ul{
     list-style: none;
 }
+.mobileLogo{
+    padding: 10px 20px;
+}
 .mobileLogo img{
     width: 300px;
 }
+.mobileLogo i{
+    font-size: 2.4rem;
+    position: absolute;
+    right: 2rem;
+    top: 25px;
+}
 .mainMenu{ 
     width: 100%;
-    border: 2px solid green;
-    padding: 10px;
-}.menuItem>p{
+    /* border: 2px solid green; */
+    padding: 30px 10px;
+}
+.menuItem{
+    margin-bottom: 10px;
+}
+.menuItem>p{
     position: relative;
-    padding: 5px 0 5px .5rem;
+    padding: 5px 0 15px .5rem;
     /* display: block; */
-    border: 2px solid red;
-    font-size: 1.4rem;
+    /* border: 2px solid red; */
+    font-size: 1.5rem;
+    color: white;
+    transition: .4s ease;
     margin-bottom: 4px;
+}
+.menuItem>p.active{
+    color: red;
 }
 .menuBtn{
     position: absolute;
-    right: 3.4rem;
+    right: 2rem;
     top: 50%;
     width: 50px;
     height: 50px;
@@ -1029,7 +1072,7 @@ transition: .3s ease;
     transform: translateY(-50%) ;
     cursor: pointer;
     
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   
 }
 .menuBtn.active{
@@ -1050,6 +1093,7 @@ transition: .3s ease;
     padding-block: 4px;
     font-size: 1.4rem;
     text-decoration: none;
+    color: var(--primartColor);
 }
 .subMenu.active{
     /* display: none; */
@@ -1060,15 +1104,21 @@ transition: .3s ease;
 .socialMenuIcons{
     display: flex;
     gap: 10px;
+    position: fixed;
+    background-origin: 0;
+    right: 20px;
+    bottom: 15px;
     padding-left: 10px;
 }
 .socialMenuIcons i{
-        height: 45px;
-        width: 45px;
-        border: 1px solid red;
-        border-radius: 50%;
-        display: flex;
-         justify-content: center;
-         align-items: center;
+    height: 45px;
+    width: 45px;
+   color: #004e7e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primartColor);
          font-size: 1.3rem;
 }
+

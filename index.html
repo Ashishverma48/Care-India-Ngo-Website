@@ -64,7 +64,7 @@
     <header><nav class="navbar" id="navbar">
       <div class="logo">
         <img src="./img/care-logo.svg" alt="" srcset="" class="logoImg" />
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars menuBarIcon" id="menuBarIcon"></i>
       </div>
       <div class="navItem">
         <div class="navUp">
@@ -141,13 +141,13 @@
       </div>
      
     </nav></header>
-    <section>
+    <section class="carouselSection">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
         data-ride="carousel"
       >
-        <div class="carousel-indicators">
+        <div class="carousel-indicators indicator">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
@@ -205,7 +205,7 @@
             </div>
             <div class="overlay"></div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item carouselItem">
             <img src="./img/Banner-6.jpg" class="d-block w-100" alt="..." />
             <div class="carouselContent">
               <h2 class="animate__animated animate__fadeInLeft">
@@ -225,7 +225,7 @@
             </div>
             <div class="overlay"></div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item carouselItem">
             <img src="./img/Banner-7.jpg" class="d-block w-100" alt="..." />
             <div class="carouselContent">
               <h2
@@ -243,7 +243,7 @@
             </div>
           </div>
 
-          <div class="carousel-item">
+          <div class="carousel-item carouselItem">
             <img
               src="./img/Donation-banner-1900-X-844.jpg"
               class="d-block w-100"
@@ -265,7 +265,7 @@
             </div>
             <div class="overlay"></div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item carouselItem">
             <img
               src="./img/Reflection-Web-banner-3-with-out-text-2.jpg"
               class="d-block w-100"
@@ -286,7 +286,7 @@
             </div>
             <div class="overlay"></div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item carouselItem">
             <img src="./img/banner.jpg" class="d-block w-100" alt="..." />
             <div class="carouselContent">
               <h2 class="animate__animated animate__fadeInLeft">
@@ -482,10 +482,10 @@
               <h2 class="counter">290</h2>
               <p>districts</p>
             </div>
-          </div>
-          <div data-aos="fade-up" data-aos-offset="120">
-            <h2 class="counter">93</h2>
-            <p>programmes</p>
+            <div data-aos="fade-up" data-aos-offset="120">
+              <h2 class="counter">93</h2>
+              <p>programmes</p>
+            </div>
           </div>
         </div>
       </div>
@@ -551,8 +551,8 @@
           <img src="./img/CARE_89.gif" alt="" />
           <p class="progress-bar">95%</p>
         </div>
+        <h4>93% of all our expenses go to our programme services</h4>
       </div>
-      <h4>93% of all our expenses go to our programme services</h4>
     </section>
     <section class="textomonialSection">
       <h3>Stories that inspired</h3>
@@ -733,9 +733,10 @@
         <p>Current IP Address: 182.69.236.226</p>
         </div>
     </footer>
-    <div class="mobileMenuContainer">
+    <div class="mobileMenuContainer" id="mobileMenuContainer">
       <div class="mobileLogo">
         <img src="./img/care-logo.svg" alt="">
+        <i class="fa-solid fa-xmark" id="removeMenuBar"></i>
       </div>
 
       <div class="mobileMenuWrapper">
@@ -808,6 +809,7 @@
   AOS.init({
     offset: 200,
     duration: 1000,
+    disable: true,
     // easing: 'linear',
   });
 </script>
