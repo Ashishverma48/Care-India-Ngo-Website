@@ -1057,6 +1057,7 @@ transition: .3s ease;
     position: absolute;
     right: 2rem;
     top: 25px;
+    color: var(--primartColor);
 }
 .mainMenu{ 
     width: 100%;
@@ -1091,6 +1092,7 @@ transition: .3s ease;
     align-items: center;
     transform: translateY(-50%) ;
     cursor: pointer;
+    
     
     font-size: 1.4rem;
   

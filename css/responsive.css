@@ -35,7 +35,7 @@
     padding-right: 2rem;
   }
   .logoImg {
-    width: 280px !important;
+    width: 275px !important;
   }
   .menuBarIcon {
     visibility: initial ;
@@ -231,8 +231,9 @@ footer{
     padding: 10px;
   }
   .logoImg {
-    width: 80%;
+    width: 190px !important;
   }
+  
   .carouselItem{
     height: 100vh;
   }
@@ -253,19 +254,31 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
- 
+ h6{
+  font-size: 25px;
+ }
+ h1{
+  font-size: 1rem;
+ }
+ h2{
+  font-size: 1.4rem;
+ }
+ .logo{}
   .fa-magnifying-glass {
     color: black;
   }
   /* mobile nav */
-  .mainMenu {
-    /* padding: 10px; */
+  
+  .mobileLogo img{
+    width: 200px;
   }
   .menuItem > p {
     padding: 0;
   }
   .owlCarouselContent{
     width: 100% !important;
+    align-items: center;
+    text-align: center;
   }
   .thumb-icon {
     width: 85px !important;
@@ -322,13 +335,26 @@ height: 7vh;
     flex-direction: column;
     align-items: start;
   }
-  .footerTerm a{
+  .footerTerm>a{
     border-right: 0 !important;
     width: 100%;
+    padding: 2px !important;
     display: block;
     border-bottom: 1px solid gray;
-
   }
+  .footerTerm>:last-child(){
+    padding: 10px;
+  }
+  .textomonialSection>h3{
+    padding: 0;
+  }
+  .helpSection  h4{
+    font-size: 1rem;
+  }
+  .owlCarouselImg{
+    width: 100% !important;
+  }
+
 }
 
 

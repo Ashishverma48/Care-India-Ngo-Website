@@ -67,7 +67,7 @@ footer.forEach(item =>{
   const btn  = item.querySelector('#footerContentHide')
   const footerItem  = item.querySelector('ul')
   btn.addEventListener('click',()=>{
-  
+   
     footerItem.classList.toggle('active')
   })
   console.log(footerItem);
