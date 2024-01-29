@@ -36,7 +36,7 @@
     width: 280px;
   }
   .menuBarIcon {
-    display: block;
+    visibility: initial ;
   }
   .navItem {
     width: 100%;
@@ -122,17 +122,126 @@
     display: none;
   }
   .progress-img {
-    float: left;
+   
+  
     margin-top: 0;
     align-self: self-start;
   }
+
   .progress-img::before {
     height: 0;
     width: 0;
   }
   .helpSection h4{
     font-size: 1.4rem;
+    position: relative;
+    top: -121px;
+    left: 82px;
+    width: 60%
   }
+  /* Stories Section  */
+  .testomonials {
+    height: auto;
+    flex-direction: column;
+}
+
+.storiesImeges,
+.storiesContent {
+    width: 100%;
+    height: auto;
+   
+    padding: 1rem;
+}
+
+.storiesImeges {
+    text-align: center;
+}
+.storiesContent::before{
+  display: none;
+}
+.test-svg,
+.stories-img {
+    position: static;
+  
+    width: 100px ;
+  
+  }
+  .test-svg{
+
+display: none !important;
+
+}
+.stories-img{
+  width: 250px !important;
+  margin-left: 45%;
+}
+
+.storiesContent {
+    padding: 0 1rem;
+}
+
+/* Partner  */
+.partnerSection{
+  padding: 0;
+}
+.partnerContainer{
+  margin-top: 1rem;
+}
+/* Conatact Section */
+.connectSection{
+  /* height: auto; */
+  padding: 1rem;
+}
+.connectMain{
+  flex-direction: column;
+}
+.connectMain>div{
+  width: 100%;
+}
+/* FOOTER CONTENT */
+footer{
+  padding: 10px;
+}
+.footerTerm{
+  gap: 5px;
+}
+.footerContentMain{
+  width: 100%;
+}
+.footerContentMain>div{
+  width: calc(50% - 3rem);
+}
+}
+
+/*1024p Media Screen */
+@media screen and (max-width: 1024px){
+  .navbar{
+    padding: 0px;
+  }
+  .logo{
+    width: 27%;
+    padding: 10px;
+  }
+  .logoImg {
+    width: 80%;
+  }
+  .carouselItem{
+    height: 100vh;
+  }
+  .overlay{
+    background-color: rgba(0, 0, 0, 0.107);
+  }
+  .carouselItem>img{
+    height: 100%;
+    object-fit: cover;
+  }
+  .navItem{
+    width: 70%;
+  }
+  .navDown>div{
+    gap: 5px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {

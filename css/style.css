@@ -59,7 +59,7 @@ h6{
     width:60%;
 }
 .menuBarIcon{
-    display: none;
+    visibility: hidden ;
 }
 #navbar.navSticky .logoImg{
     filter: brightness(0) invert(1)
@@ -681,6 +681,7 @@ height: 17vh;
 .helpSection h4{
     font-weight: 500;
     font-size: 2rem;
+    
 }
 /* Testomonial section  */
 .textomonialSection{
@@ -787,7 +788,7 @@ height: 17vh;
 
 .connectSection{
     width: 100%;
-    height: 95vh;
+    /* height: 95vh; */
     padding: 2rem 5rem;
     background-color: #e4701d;
 }
@@ -918,6 +919,7 @@ footer{
     /* border: 2px solid red; */
     padding: 30px 40px;
     display: flex;
+
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
@@ -927,6 +929,7 @@ footer{
 .footerContentMain{
     display: flex;
     width: 95%;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .footerContentMain>div{
@@ -941,13 +944,13 @@ footer{
     padding-left: 1rem;
 }
 .footerLogo img{
-    width: 230px;
+    width: 19vw;
 }
 .footerLogo>div{
     /* border: 2px solid red; */
     padding: 4px 30px;
     width: fit-content;
-    font-size: 29px;
+    font-size: 2vw;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.8);
     background-color: #f4b124;
@@ -960,7 +963,7 @@ footer{
     color: var(--primartColor);
 }
 .footerContent h4{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #f4b124;
     padding-bottom: 8px;
     color: var(--primartColor);
 }
