@@ -70,6 +70,6 @@ footer.forEach(item =>{
    
     footerItem.classList.toggle('active')
   })
-  console.log(footerItem);
+ 
 })
 
