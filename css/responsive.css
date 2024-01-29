@@ -20,12 +20,14 @@
     max-width: 100%;
     overflow: hidden;
   }
-
+  .navDonate {
+    display: none;
+  }
   .navDown {
     display: none;
   }
   .logo {
-    width: 100%;
+    width: 100% !important;
     justify-content: space-between;
   }
   .logo i {
@@ -33,7 +35,7 @@
     padding-right: 2rem;
   }
   .logoImg {
-    width: 280px;
+    width: 280px !important;
   }
   .menuBarIcon {
     visibility: initial ;
@@ -63,6 +65,12 @@
   /* Owl Carousel  */
   .owlCarouselItem {
     padding: 3rem 10px;
+    flex-direction: column;
+   
+    
+  }
+  .owlCarouselImg{
+    width: 50% !important;
   }
   .carouselContent h2 {
     font-weight: 500;
@@ -244,10 +252,8 @@ footer{
 
 }
 
-@media screen and (max-width: 768px) {
-  .navDonate {
-    display: none;
-  }
+@media screen and (max-width: 480px) {
+ 
   .fa-magnifying-glass {
     color: black;
   }
@@ -258,4 +264,15 @@ footer{
   .menuItem > p {
     padding: 0;
   }
+  .carouselItem{
+   
+  }
+  .focus-area{
+    width: 100%;
+  }
+  .focus-area:hover .focus-content{
+    display: none;
+  }
 }
+
+
