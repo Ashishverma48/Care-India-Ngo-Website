@@ -59,3 +59,17 @@ menuBar.addEventListener('click',()=>{
 removeMenuBar.addEventListener('click',()=>{
   mobileMenuContainer.style.transform  = 'translateX(-100%)';  
 })
+
+
+
+const footer = document.querySelectorAll('.footerContent')
+footer.forEach(item =>{
+  const btn  = item.querySelector('#footerContentHide')
+  const footerItem  = item.querySelector('ul')
+  btn.addEventListener('click',()=>{
+  
+    footerItem.classList.toggle('active')
+  })
+  console.log(footerItem);
+})
+

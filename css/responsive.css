@@ -23,7 +23,7 @@
   .navDonate {
     display: none;
   }
-  .navDown {
+  .navDown {      
     display: none;
   }
   .logo {
@@ -264,14 +264,70 @@ footer{
   .menuItem > p {
     padding: 0;
   }
+  .owlCarouselContent{
+    width: 100% !important;
+  }
+  .thumb-icon {
+    width: 85px !important;
+    padding:5px !important;
+  }
+  .graphImg{gap: 5px;}
   .carouselItem{
    
+  }
+  .graphImg>div h5{
+    font-size: 13px !important;
+  }
+  .arrow{
+height: 7vh;
   }
   .focus-area{
     width: 100%;
   }
   .focus-area:hover .focus-content{
     display: none;
+  }
+  .connectSection{
+    padding: 2px;
+  }
+  .connect-form {
+    padding-inline: 5px;
+  }
+  .connect-details{
+    padding: 5px;
+  }
+  .footerContentMain>div{
+    width: 100%;
+    padding-top:10px ;
+  }
+  .footerHead i{
+    display: block;
+  }
+  .footerContent ul{
+    display: none;
+  }
+  .footerContent ul.active{
+    display: block;
+    transition: .3s ease-in;
+  }
+  .footerLogo img {
+    width: 60vw;
+  }
+  .footerLogo>div{
+    width: 100%;
+    font-size: 6vw;
+    
+  }
+  .footerTerm{
+    flex-direction: column;
+    align-items: start;
+  }
+  .footerTerm a{
+    border-right: 0 !important;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid gray;
+
   }
 }
 

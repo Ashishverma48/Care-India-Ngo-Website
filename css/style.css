@@ -623,7 +623,7 @@ height: 17vh;
 }
 
 .graphImg img{
-   max-width: 100%;
+   /* max-width: 100%; */
     height: auto;
 }
 .graphImg img{
@@ -758,9 +758,9 @@ height: 17vh;
 
 /* Partner Section */
 .partnerSection{
-    padding:2rem 3rem 4rem 3rem;
+    padding:5rem 3rem 4rem 3rem;
     width: 100%;
-    height: 50vh;
+    
 }
 .partnerSection h2{
     text-align: center;
@@ -934,7 +934,7 @@ footer{
 .footerContentMain>div{
     /* border: 2px solid green; */
     width: 22%;
-    height: 260px;
+    /* height: 260px; */
 }
 .footerLogo{
     display: flex;
@@ -951,6 +951,7 @@ footer{
     width: fit-content;
     font-size: 2vw;
     font-weight: 700;
+    text-align: center;
     color: rgba(0, 0, 0, 0.8);
     background-color: #f4b124;
 }
@@ -961,19 +962,36 @@ footer{
     font-size: 14px;
     color: var(--primartColor);
 }
-.footerContent h4{
+.footerHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 2px solid #f4b124;
-    padding-bottom: 8px;
-    color: var(--primartColor);
+    padding-bottom: 13px;
 }
-.footerContent {
-    display:flex ;
+.footerHead i{
+    margin-right: 2rem;
+    font-size: 1.3rem;
+   
+    color: white;
+    display: none;
 
-    flex-direction: column;
-    gap: 8px;
+}
+.footerContent h4{
+    color: var(--primartColor);
+    margin: 0;
+}
+.footerContent>ul {
+    list-style: none;
+    /* display: none; */
+    padding: 0;
+}
+.footerContent>ul li{
+    padding-block: 3px;
 }
 footer a{
     text-decoration: none;
+  
     color: var(--primartColor);
     font-size: 15px;
 }
