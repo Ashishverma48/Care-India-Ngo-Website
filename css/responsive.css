@@ -219,8 +219,35 @@ footer{
 .footerContentMain>div{
   width: calc(50% - 3rem);
 }
+
+
+/* .aboutPostSection  */
+.aboutPostSection .container{
+  flex-direction: column;
+}
+.aboutPostSection .container>div{
+  width: 100%;
+}
+.postLeftImg {
+  display: none;
+}
+.coreValueItem>div{
+  width:calc(50% - 2rem);
+}
+.coreImg{
+  /* display: none; */
+  margin: 0;
 }
 
+.coreValueImg h3 {
+  margin-top: 0;
+  color:#004e7e;
+}
+.coreImg img {
+display: none;
+
+}
+}
 /*1024p Media Screen */
 @media screen and (max-width: 1024px){
   .navbar{
@@ -369,6 +396,11 @@ height: 7vh;
   .reachLeft{
     background-color: #025588b3 ;
   }
+
+  .about-us-bg{
+    background-position: 12% 0;
+  }
+
 
 }
 
