@@ -263,7 +263,9 @@ footer{
  h2{
   font-size: 1.4rem;
  }
- 
+.logo i {
+  padding: 0;
+}
   .fa-magnifying-glass {
     color: black;
   }
@@ -317,7 +319,8 @@ height: 7vh;
     width: 100%;
     padding-top:10px ;
   }
-  .footerHead i{
+ 
+  .plus::before{
     display: block;
   }
   .footerContent ul{
@@ -362,6 +365,9 @@ height: 7vh;
   }
   .owlCarouselImg{
     width: 100% !important;
+  }
+  .reachLeft{
+    background-color: #025588b3 ;
   }
 
 }
