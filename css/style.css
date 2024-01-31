@@ -1164,16 +1164,19 @@ transition: .3s ease;
 
 
 /* about Us Page */
+.banner-bg{
 
-.about-us-bg{
     min-height:550px;
     width: 100%;
     /* border: 2px solid red; */
-    background-image: url('../img/about-banner.jpg');
     background-size: cover;
     background-repeat: no-repeat ;
     background-position: 50% 0 ;
     position: relative;
+}
+
+.about-us-bg{
+    background-image: url('../img/about-banner.jpg');
     /* z-index: 2; */
 }
 .about-us-bg::after{
@@ -1305,6 +1308,7 @@ transition: .3s ease;
     position: relative;
     z-index: 9;
     padding: 10px;
+    text-align: center;
  
 }
 .about-middle p{
@@ -1312,7 +1316,7 @@ transition: .3s ease;
     font-size: 19px;
     color: var(--primartColor);
     z-index: 2;
-    text-align: center;
+    
     margin-bottom: 30px;
 }
 .about-middle p>span{
@@ -1396,5 +1400,207 @@ transition: .3s ease;
     color: #004e7e;
 }
 
+/* Vision Page */
 
+.vision-bg{
+    background-image: url('../img/visionmission_banner.jpg');
+}
+
+.visionMain{
+    /* border: 2px solid red; */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.visionContent{
+    /* border: 2px solid green; */
+    display: flex   ;
+    gap: 4rem;
+    padding-inline: 3rem 3rem;
+    justify-content: center;
+}
+.visionContent>div{
+    width: 40%;
+    text-align: center;
+}
+.visionContent h3{
+    color: #004e7e;
+}
+.visionContent p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+.visionHalfCircle{
+    /* overflow: hidden; */
+    width: 20%;
+    margin: -114px auto -110px auto;
+    transform: rotate(90deg );
+}
+.visionHalfCircle img{
+    width: 100%;
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+
+
+table{
+    width: 90%;
+    /* margin: auto; */
+}
+.table-lg{
+    
+}
+.visionTable thead th{
+    background-color: #004e7e;
+    color: var(--primartColor);
+    border-color: white;
+    padding: 1rem;
+    /* width: 10%; */
+}
+.visionTable tbody th{
+    background-color: #f0f0f0 ;
+    font-weight: 400
+
+;
+}
+.visionTable thead th:nth-of-type(5){
+    color: blue;
+}
+td,th{
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+}
+ .visionTable i{
+    color: #e4701d;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 700;
+   
+}
+.vistionTalbeMobile {
+    display: none;
+}
+.vistionTalbeMobile thead  th{
+    background-color: #004e7e;
+    color: white;
+}
+.vistionTalbeMobile ul{
+    list-style: none;
+}
+.vistionTalbeMobile ul li{
+    color: #004e7e;
+    font-weight: 500;
+}
+.vistionTalbeMobile i{
+    color: #e4701d;
+    font-size: 21px;
+    font-weight: 700;
+    /* padding-right: 1rem; */
+}
+
+.visionBanner{
+    background-image: url('../img/im.2.jpg');
+    background-size: cover;
+}
+
+/* aimSection */
+.aimSection{
+    padding: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.aimSection>h4{
+        color: #004e7e;
+        text-align: center;
+        font-size: 1.9rem;
+        width: 90%;
+}
+.aimSection>p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+.aimRelation{
+   
+    
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.aimRelation>div{
+    width: 30%;
+    height: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.aimRelation>div>div{
+    width: 120px;
+    border: 2px solid #e4701d;
+    border-radius: 50%;
+    height: 120px;
+    padding: 1rem;
+    
+}
+.aimRelation p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* visionInfoSection */
+.visionInfoSection{
+
+    min-height: 420px;
+    width: 100%;
+    
+    position: relative;
+}
+.visionBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-image: url('../img/im.3.jpg');
+    background-size: cover;
+
+}
+.visionInfoSection::before{
+position: absolute;
+content: "";
+width: 50%;
+height: 100%;
+z-index: 9;
+inset: 0;
+background-color:#e4701dd1 ;
+}
+.visionInfo{
+    /* padding: 3rem; */
+    width: 50%;
+    z-index: 99;
+    position: relative;
+    padding: 3rem;
+    color: white;
+}
+.visionInfo p{
+    font-size: 19px;
+    color: white    ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.visionInfo li{
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
 
