@@ -23,6 +23,10 @@
   .navDonate {
     display: none;
   }
+  .navDonate a{
+    text-decoration: none;
+    color: white;
+  }
   .navDown {      
     display: none;
   }
@@ -457,6 +461,9 @@ height: 7vh;
   }
   .vistionTalbeMobile{
     display: block;
+  }
+  .donateFormMain{
+    padding: 10px;
   }
 
 }

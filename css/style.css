@@ -141,7 +141,11 @@ input::placeholder{
 #navbar.navSticky .navDown{
     transform: translate(0);
 }
-
+.navDonate a{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+}
 .navDown>div{
     display: flex;
     gap: .5rem;
@@ -1772,16 +1776,17 @@ color: white;
 .donateFormMain {
     background-image: url('../img/doanteformbg.jpg');
     width: 100%;
-    height: 100vh;
+    min-height: 550px;
     background-size: cover;
     padding: 3rem;
 }
 .donateForm{
     background-color: white;
+    padding: 1rem;
 }
 .donateFormMain li{
     width: 50%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .formIconCircle {
     height: 50px;
@@ -1794,7 +1799,7 @@ color: white;
     align-items: center;
     margin: 0 auto;
     background-color: gray;
-    border: 1px solid #004e7e;
+    /* border: 1px solid #004e7e; */
     color: white;
     font-size: 1.4rem;
 }
@@ -1805,7 +1810,7 @@ color: white;
 .donateFormMain .formSpan{
 margin: 0 auto;
 display: block;
-border-bottom: 2px solid black;
+/* border-bottom: 2px solid black; */
 text-align: center;
 /* padding-bottom: 1rem; */
 font-size: 1.4rem;
@@ -1819,10 +1824,82 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 .formContent{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding-top: 3rem;
 }
 .formRadio>div{
     display: flex;
     gap: 10px;
+}
+.formContent .amount{
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    width: 90%;
+}
+.formContent .amount>div{
+    padding: 5px 50px;
+   
+}
+.amount>div.active{
+
+    background-color: #e4701d;
+}
+.formContent .amount>div:active{
+    background-color: #e4701d;
+
+}
+.formContent strong{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.formRadio p{
+    font-size: 1.1rem;
+    
+}
+.amount>div span{
+    font-size: 1.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.proceedBtn{
+    justify-content: end;
+    margin-top: 1rem;
+
+}
+.proceedBtn>button{
+    width: fit-content;
+    padding: 9px 70px;
+    margin-right: 7vw;
+}
+.formButton{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    margin-top: 1rem;
+}
+.formButton>div{
+    /* border: 2px solid red; */
+    padding: 5px 50px;
+    font-size: 20px;
+}
+.formButton>:nth-child(1){
+    background-color: #004e7e;
+    color: white;
+}
+.formButton>:nth-child(2){
+    background-color: #ffc107;
+
+}
+.finacial{
+    /* gap: 1rem; */
+}
+.finacial>div{
+    /* border: 2px solid red; */
+    margin-bottom: 1rem;
+}
+.finacial>div>div{
+    padding: 3rem;
+    height: 100%;
+    background-color: #ffc107;
 }
