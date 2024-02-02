@@ -285,7 +285,10 @@ width: calc(50% - 1rem );
   width: 100%;
 }
 
-
+/* Donate  */
+.donateMain>div{
+  width: 100%;
+}
 
 
 

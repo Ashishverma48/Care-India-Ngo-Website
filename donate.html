@@ -7,7 +7,9 @@
       rel="icon"
       href="https://www.careindia.org/wp-content/uploads/2020/09/favicon1.ico"
     />
-    <title>Donate Online to Charity | Donate for a Cause – Education, Health in India</title>
+    <title>
+      Donate Online to Charity | Donate for a Cause – Education, Health in India
+    </title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -145,7 +147,6 @@
       <div class="container">
         <div data-aos="fade-up">
           <a href=""> Home</a> <span>></span> <a href="">Donate</a>
-          
         </div>
         <div data-aos="fade-up">
           <h1>Donate</h1>
@@ -153,10 +154,126 @@
       </div>
     </section>
     <section class="donateSection container">
-        <h3>DO A GOOD DEED</h3>
-
+      <h3>DO A GOOD DEED</h3>
+      <div class="donateMain">
+        <div>
+          <h4>
+            CARE has been working in India for over 70 years, for the upliftment
+            of marginalised women and girls through 53 programmes in 18 states
+            and 130+ districts.
+          </h4>
+        </div>
+        <div class="donateImg">
+          <div>
+            <img src="./img/CARE_89.gif" alt="" />
+            <p class="carePercent">95%</p>
+          </div>
+          <p>93% of all our expenses go to our programme services</p>
+        </div>
+      </div>
     </section>
-   
+    <section class="donateFormMain">
+      <div class="container donateForm">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <span class="formSpan">Amount</span>
+            <a class="">
+              <div
+                class="formIconCircle nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <span class="formSpan">Billing Information</span>
+            <a class="">
+              <div
+                class="formIconCircle nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content formContent" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            <div class="row">
+              <div class="col-12 col-md-2 offset-md-1">
+                <h4>Nationally</h4>
+              </div>
+              <div class="col-12 col-md-9 d-flex formRadio">
+                <div class="form-check-inline me-4 d-flex">
+                  <input type="radio" value="Indian" name="nation" class="form-check-input"/>
+                  <label for=""><strong>INDIAN</strong></label>
+                </div>
+                <div>
+                  <input type="radio" value="Nri" name="nation" class="form-check-input"/>
+                  <label for=""><strong>NRI</strong></label>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 col-md-2 offset-md-1">
+                <h4>Focus Area
+                </h4>
+              </div>
+              <div class="col-12 col-md-9 d-flex formRadio flex-wrap">
+                <div class=" me-4">
+                  <input type="radio" name="focus" class="form-check-input"/>
+                  <label for=""><strong>Education</strong></label>
+                </div>
+                <div class=" me-4">
+                  <input type="radio"  name="focus" class="form-check-input"/>
+                  <label for=""><strong>Nutrition</strong></label>
+                </div>
+                <div class=" me-4">
+                  <input type="radio"  name="focus" class="form-check-input"/>
+                  <label for=""><strong>Vaccination</strong></label>
+                </div>
+                <div class=" me-4 form-check-inline">
+                  <input type="radio"  name="focus" class="form-check-input"/>
+                  <label for=""><strong>Livelihood</strong></label>
+                </div>
+                <div class=" me-4">
+                  <input type="radio"  name="focus" class="form-check-input"/>
+                  <label for=""><strong>Disaster Relife</strong></label>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            Bill nig skjhaqdgu
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="connectSection">
       <h3 data-aos="fade-up">Connect with Us</h3>
       <div class="connectMain">
@@ -423,7 +540,7 @@
   AOS.init({
     offset: 200,
     duration: 1000,
-    disable:false,
+    disable: false,
   });
 </script>
 <script

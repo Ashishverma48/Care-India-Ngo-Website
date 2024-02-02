@@ -1718,10 +1718,111 @@ gap: 1rem;
     background-image: url('../img/banner-donate.jpg');
 }
 .donateSection{
-    border: 2px solid red;
+   
     width: 100%;
-    height: 500px;
+   
     margin-top: 1rem;
 
 
+}
+.donateSection h3{
+    text-align: center;
+    padding-block: 1rem;
+}
+.donateMain{
+  
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.donateMain>div{
+    width: calc(50% - 1rem);
+    padding: 1rem;
+}
+.donateMain h4{
+    color: #004e7e;
+}
+.donateMain .donateImg{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /* border: 2px solid green; */
+}
+.donateImg img{
+    width: 130px;
+    /* position: r elative; */
+}
+.donateImg>div{
+    position: relative;
+}
+.donateImg .carePercent{
+position: absolute;
+top:60%;
+left:50%;
+transform: translateX(-50%);
+font-size: 1.7rem;
+color: white;
+}
+.donateImg p{
+    font-size: 19px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.donateFormMain {
+    background-image: url('../img/doanteformbg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    padding: 3rem;
+}
+.donateForm{
+    background-color: white;
+}
+.donateFormMain li{
+    width: 50%;
+    border: 2px solid red;
+}
+.formIconCircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50% !important;
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: gray;
+    border: 1px solid #004e7e;
+    color: white;
+    font-size: 1.4rem;
+}
+.donateForm{
+    padding-top: 3rem;
+   
+}
+.donateFormMain .formSpan{
+margin: 0 auto;
+display: block;
+border-bottom: 2px solid black;
+text-align: center;
+/* padding-bottom: 1rem; */
+font-size: 1.4rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.formIconCircle li a{
+    position: relative;
+    top: -2rem;
+    border-radius: 50px;
+    
+
+}
+.formContent{
+    border: 2px solid green;
+    padding-top: 3rem;
+}
+.formRadio>div{
+    display: flex;
+    gap: 10px;
 }
