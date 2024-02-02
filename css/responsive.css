@@ -32,6 +32,7 @@
   }
   .logo i {
     font-size: 2rem;
+    color: white;
     padding-right: 2rem;
   }
   .logoImg {
@@ -280,7 +281,9 @@ width: calc(50% - 1rem );
   width: 95%;
 }
 
-
+.boardPerson{
+  width: 100%;
+}
 
 
 

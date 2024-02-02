@@ -1604,3 +1604,124 @@ background-color:#e4701dd1 ;
     color: white;
 }
 
+/* Out Team Page */
+
+.team-bg{
+    background-image: url('../img/our-team-banner.jpg');
+}
+.boardSection{
+   
+    width: 100%;
+    /* height: 100vh; */
+    margin-top: 2rem;
+}
+
+
+
+.boardMain{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+.boardMemberBtnClick{
+    /* border: 2px solid red;/ */
+    display: flex;
+    gap: 2rem;
+    /* padding: 10px ; */
+    border-bottom: 1px solid black;
+}
+.boardMain p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.boardPerson{
+   
+    width: 45%;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem   ;
+    
+}
+.boardSocialIcon{
+    display: flex;
+    gap: 10px;
+}
+
+.boardSocialIcon i{
+   
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;   
+     background-color: #e4701d;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: white;
+}
+.boardSocialIcon .fa-linkedin-in{
+    background-color: #004e7e;
+}
+.boardPersonImg{
+    
+    border: 3px solid #e4701d;
+    border-radius: 50%;
+    transition: .1s ease;
+    height: fit-content;
+}
+.boardPerson img{
+    border-radius: 50%;
+    width: 150px;
+    filter: grayscale(100%);
+}
+.boardPersonImg img:hover {
+    filter: grayscale(0);
+}
+.boardPersonImg:hover{
+    box-shadow: 0 0 15px black;
+}
+.boardPersonDetail{
+    margin-top: 10px;
+}
+.boardMemberPerson{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.boardMember{
+    margin-top: 2rem;
+    padding: 2rem ;
+    background-image: url('../img/boardMember/grey-bg-pattern.png');
+
+}
+.boardSection h3{
+    font-size: 2rem;
+}
+.boardSection h4{
+    color: #004e7e;
+}
+.ceoMain{
+    padding-block: 1rem;
+}
+.careCommity{
+    padding-block: 1rem;
+    width: 100%;
+    border: 2px solid red;
+    background-image: url('../img/boardMember/grey-bg-pattern.png');
+}
+
+/* Donate Page */
+.donate-bg{
+    background-image: url('../img/banner-donate.jpg');
+}
+.donateSection{
+    border: 2px solid red;
+    width: 100%;
+    height: 500px;
+    margin-top: 1rem;
+
+
+}
